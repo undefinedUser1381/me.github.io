@@ -1,2 +1,2 @@
-# This is my personal website with 
-## Tailwind
+# This is my personal website with Tailwind
+
