@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>سلام من عرفانم</title>
+</head>
+<body class="bg-white h-screen">
+
+ <!-- Start Header -->
+ <header id="particles-js" class="bg-black z-10">
+   
+           <!-- Logo and menu wrapper -->
+     <div class="w-full p-3 opacity-80 bg-black fixed top-0 left-0 right-0 z-20">
+      <div id="nav" class="w-[80%] mx-auto p-3 flex items-center justify-between text-[16px]">
+
+        <!-- logo -->
+         <div class="w-24">
+           <div class="w-full h-full flex items-center justify-center">
+             <img class="w-full object-cover" src="../public/images/logo.png"/>
+           </div>
+         </div>
+  
+         <!-- Menu item -->
+        <div class="font-Vazir text-pink w-[70%] xl:w-[85%] lg:hidden">
+         <nav class="w-full">
+           <ul class="flex md:hidden items-center gap-6 justify-between [&>li>a]:text-white">
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">خانه</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">درباره من</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">مهارت ها</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">رزومه</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">دستاوردها</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">خدمات</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">نمونه کارها</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">مشتریان</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">بلاگ</a></li>
+             <li><a class="hover:text-pink text-sm transition-colors font-semibold" href="">تماس</a></li>
+           </ul>
+         </nav>
+        </div>
+  
+        <!-- Responsive menu -->
+        <div class="w-8 cursor-pointer hidden lg:block">
+         <svg id="open-btn" fill="#9C27B0" class="w-full h-full" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icn/menu</title><path d="M2 3h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z" id="a"/></svg>
+        </div>
+  
+        <!-- Mobile header -->
+        <div id="mobile-menu" class="hidden fixed top-0 right-[-20rem] bottom-0 w-[16rem] lg:flex transition-all bg-dark z-10">
+            <div class="w-full">
+             <div class="rounded-full p-3 cursor-pointer">
+               <svg id="cancel-btn" fill="#9C27B0" width="30px" height="30px" viewBox="-28 0 512 512" xmlns="http://www.w3.org/2000/svg" ><title>cancel</title><path d="M64 388L196 256 64 124 96 92 228 224 360 92 392 124 260 256 392 388 360 420 228 288 96 420 64 388Z" /></svg>
+             </div>
+             <ul class="flex flex-col items-start mt-3">
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">خانه</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">درباره من</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">مهارت ها</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">رزومه</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">دستاوردها</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">خدمات</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">نمونه کارها</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">مشتریان</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">بلاگ</li>
+               <li class="p-2 w-full hover:text-pink transition-all cursor-pointer font-Vazir text-[#BDBDBD]">تماس</li>
+             </ul>
+            </div>
+        </div>
+  
+      </div>
+     </div>
+
+
+     <!-- Header contents -->
+     <div class="w-[50%] mx-auto min-h-[35rem] absolute left-[25%] z-0 top-[15%] sm:min-h-[35rem] sm:w-full sm:left-0 flex items-center justify-center">
+          <div class="flex flex-col gap-9">
+              <h4 class="font-Vazir font-bold text-[#BDBDBD] text-xl text-center">به وبسایت من خوش آمدید</h4>
+              <h1 class="text-[55px] lg:text-[25px] text-white font-Vazir font-bold text-center">من سید عرفان قزی هستم</h1>
+              <h5 id="title" class="font-bold text-[#BDBDBD] text-center text-sm">بازاریابی شبکه</h5>
+              <!-- Social icons -->
+              <div class="flex items-center justify-center gap-6">
+                <div class="rounded-full p-3 transition-all hover:bg-pink cursor-pointer"><svg fill="#fff" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8,2 L16,2 C19.3137085,2 22,4.6862915 22,8 L22,16 C22,19.3137085 19.3137085,22 16,22 L8,22 C4.6862915,22 2,19.3137085 2,16 L2,8 C2,4.6862915 4.6862915,2 8,2 Z M8,4 C5.790861,4 4,5.790861 4,8 L4,16 C4,18.209139 5.790861,20 8,20 L16,20 C18.209139,20 20,18.209139 20,16 L20,8 C20,5.790861 18.209139,4 16,4 L8,4 Z M12,17 C9.23857625,17 7,14.7614237 7,12 C7,9.23857625 9.23857625,7 12,7 C14.7614237,7 17,9.23857625 17,12 C17,14.7614237 14.7614237,17 12,17 Z M12,15 C13.6568542,15 15,13.6568542 15,12 C15,10.3431458 13.6568542,9 12,9 C10.3431458,9 9,10.3431458 9,12 C9,13.6568542 10.3431458,15 12,15 Z M17,8 C16.4477153,8 16,7.55228475 16,7 C16,6.44771525 16.4477153,6 17,6 C17.5522847,6 18,6.44771525 18,7 C18,7.55228475 17.5522847,8 17,8 Z"/></svg></div>
+                <div class="rounded-full p-3 transition-all hover:bg-pink cursor-pointer"><svg fill="#fff" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12c0-6.627-5.373-12-12-12zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg></div>
+                <div class="rounded-full p-3 transition-all hover:bg-pink cursor-pointer"><svg fill="#fff" width="20px" height="20px" viewBox="-2 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-linkedin"><path d='M19.959 11.719v7.379h-4.278v-6.885c0-1.73-.619-2.91-2.167-2.91-1.182 0-1.886.796-2.195 1.565-.113.275-.142.658-.142 1.043v7.187h-4.28s.058-11.66 0-12.869h4.28v1.824l-.028.042h.028v-.042c.568-.875 1.583-2.126 3.856-2.126 2.815 0 4.926 1.84 4.926 5.792zM2.421.026C.958.026 0 .986 0 2.249c0 1.235.93 2.224 2.365 2.224h.028c1.493 0 2.42-.989 2.42-2.224C4.787.986 3.887.026 2.422.026zM.254 19.098h4.278V6.229H.254v12.869z' /></svg></div>
+              </div>
+          </div>
+     </div>
+
+ </header>
+ <!-- End header -->
+
+ <!-- Start main -->
+ <main class="w-[80%] mx-auto mt-20">
+  <div class="flex items-start justify-center gap-10">
+    <div class="w-[30%]"><img class="w-full h-full" src="../public/images/about.jpg" alt=""></div>
+    <div class="w-[50%] flex flex-col gap-14">
+      <h3 class="font-Vazir text-pink text-[3.5rem]"><span class="border-b-2 border-pink">درباره</span> <span class="text-black">من</span></h3>
+      <div class="flex items-start flex-col gap-4">
+        <h4 class="font-Vazir text-[1.3rem] leading-4">من یک طراح رابط کاربری حرفه ای هستم</h4>
+        <p class="text-[#777777] font-Vazir">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای</p>
+      </div>
+      <div class="flex items-start justify-between font-Vazir ">
+        <div class="flex flex-col gap-5">
+          <p>نام: <span class="text-[#777777]">سید عرفان قزی</span></p>
+          <p>سن: <span class="text-[#777777]">21</span></p>
+        </div>
+        <div class="flex flex-col gap-5">
+          <p>ایمیل: <span class="text-[#777777]">erfanghezi5050@gmail.com</span></p>
+          <p>مکان: <span class="text-[#777777]">ایران-سبزوار</span></p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center bg-pink w-44">
+        <a href="#" class="p-10">دریافت رزومه</a>
+      </div>
+    </div>
+  </div>
+ </main>
+ <!-- End main -->
+
+ <br><br><br><br>
+
+ <script src="../public/vendor/particle/particles.js"></script>
+ <script src="../public/vendor/particle/app.js"></script>
+ <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+ <script src="../public/scripts/main.js"></script>
+</body>
+</html>

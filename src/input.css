@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "Vazir";
+        src:local("Vazir"), url("../fonts/vazir/Vazir.ttf") format("truetype");
+        font-display: swap;
+
+    }
+}
+
+@layer components{
+    header{
+        background:linear-gradient(rgba(13, 12, 12, 0.5), rgba(13, 12, 12, 0.5)),url("/public/images/header.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+        position: relative;
+        background-position: center;
+    }
+    .nav--active{
+        @apply p-5 bg-white;
+    }
+}
