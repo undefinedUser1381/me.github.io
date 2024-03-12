@@ -652,8 +652,8 @@ header{
   width: 6rem;
 }
 
-.w-44 {
-  width: 11rem;
+.w-40 {
+  width: 10rem;
 }
 
 .w-8 {
@@ -682,6 +682,18 @@ header{
 
 .w-full {
   width: 100%;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .cursor-pointer {
@@ -736,12 +748,25 @@ header{
   gap: 2.25rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-l-xl {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
 }
 
 .border {
@@ -767,11 +792,6 @@ header{
   background-color: rgb(40 40 48 / var(--tw-bg-opacity));
 }
 
-.bg-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 39 176 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -788,10 +808,6 @@ header{
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .text-center {
@@ -828,6 +844,10 @@ header{
   line-height: 1.75rem;
 }
 
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -838,6 +858,22 @@ header{
 
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .text-\[\#777777\] {
@@ -911,8 +947,29 @@ header{
 }
 
 @media (max-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 }
 
@@ -929,6 +986,14 @@ header{
     display: none;
   }
 
+  .lg\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .lg\:text-\[25px\] {
     font-size: 25px;
   }
@@ -937,6 +1002,10 @@ header{
 @media (max-width: 1200px) {
   .xl\:w-\[85\%\] {
     width: 85%;
+  }
+
+  .xl\:w-\[50\%\] {
+    width: 50%;
   }
 }
 
