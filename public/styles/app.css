@@ -563,6 +563,17 @@ header{
   background-position: center;
 }
 
+.details{
+  background:linear-gradient(rgba(13, 12, 12, 0.5), rgba(13, 12, 12, 0.5)),url("/public/images/cropped-client-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+}
+
 .fixed {
   position: fixed;
 }
@@ -587,14 +598,6 @@ header{
   left: 25%;
 }
 
-.left-\[50\%\] {
-  left: 50%;
-}
-
-.left-\[75\%\] {
-  left: 75%;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -603,12 +606,36 @@ header{
   right: -20rem;
 }
 
+.right-\[10\%\] {
+  right: 10%;
+}
+
+.right-\[20\%\] {
+  right: 20%;
+}
+
 .right-\[35\%\] {
   right: 35%;
 }
 
+.right-\[45\%\] {
+  right: 45%;
+}
+
 .right-\[65\%\] {
   right: 65%;
+}
+
+.right-\[75\%\] {
+  right: 75%;
+}
+
+.right-\[80\%\] {
+  right: 80%;
+}
+
+.right-\[95\%\] {
+  right: 95%;
 }
 
 .top-0 {
@@ -621,66 +648,6 @@ header{
 
 .top-\[15\%\] {
   top: 15%;
-}
-
-.right-\[75\%\] {
-  right: 75%;
-}
-
-.right-\[50\%\] {
-  right: 50%;
-}
-
-.right-\[45\%\] {
-  right: 45%;
-}
-
-.right-\[40\%\] {
-  right: 40%;
-}
-
-.left-\[15\%\] {
-  left: 15%;
-}
-
-.right-\[15\%\] {
-  right: 15%;
-}
-
-.right-\[5\%\] {
-  right: 5%;
-}
-
-.right-\[90\%\] {
-  right: 90%;
-}
-
-.right-\[20\%\] {
-  right: 20%;
-}
-
-.right-\[10\%\] {
-  right: 10%;
-}
-
-.right-\[100\%\] {
-  right: 100%;
-}
-
-.right-\[85\%\] {
-  right: 85%;
-}
-
-.right-\[95\%\] {
-  right: 95%;
-}
-
-.right-\[70\%\] {
-  right: 70%;
-}
-
-.right-\[80\%\] {
-  right: 80%;
 }
 
 .z-0 {
@@ -744,6 +711,10 @@ header{
   height: 0.3px;
 }
 
+.h-\[20rem\] {
+  height: 20rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -756,20 +727,32 @@ header{
   height: 100vh;
 }
 
-.h-\[0\.2px\] {
-  height: 0.2px;
+.h-\[100\%\] {
+  height: 100%;
 }
 
-.h-\[0\.1px\] {
-  height: 0.1px;
+.h-\[15rem\] {
+  height: 15rem;
 }
 
-.h-\[0\.0px\] {
-  height: 0.0px;
+.h-\[16rem\] {
+  height: 16rem;
+}
+
+.h-\[16\\7rem\] {
+  height: 16\7rem;
+}
+
+.h-\[17rem\] {
+  height: 17rem;
 }
 
 .min-h-\[35rem\] {
   min-height: 35rem;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-24 {
@@ -784,8 +767,20 @@ header{
   width: 2rem;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
 .w-\[16rem\] {
   width: 16rem;
+}
+
+.w-\[25\%\] {
+  width: 25%;
 }
 
 .w-\[30\%\] {
@@ -808,24 +803,12 @@ header{
   width: 80%;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-\[25\%\] {
-  width: 25%;
-}
-
-.w-\[15\%\] {
-  width: 15%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
 .w-\[85\%\] {
   width: 85%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .cursor-pointer {
@@ -951,6 +934,10 @@ header{
   padding: 0.75rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1026,6 +1013,11 @@ header{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#9e9e9e\] {
+  --tw-text-opacity: 1;
+  color: rgb(158 158 158 / var(--tw-text-opacity));
+}
+
 .opacity-80 {
   opacity: 0.8;
 }
@@ -1089,6 +1081,10 @@ header{
     display: none;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-\[50\%\] {
     width: 50%;
   }
@@ -1103,6 +1099,14 @@ header{
 
   .md\:gap-12 {
     gap: 3rem;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
   }
 }
 

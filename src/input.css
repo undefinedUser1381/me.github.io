@@ -25,4 +25,14 @@
     .nav--active{
         @apply p-5 bg-white;
     }
+    .details{
+        background:linear-gradient(rgba(13, 12, 12, 0.5), rgba(13, 12, 12, 0.5)),url("/public/images/cropped-client-min.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50rem;
+        width: 100%;
+        background-attachment: fixed;
+        position: relative;
+        background-position: center;
+    }
 }
