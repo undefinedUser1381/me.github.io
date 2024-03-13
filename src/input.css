@@ -13,7 +13,7 @@
 
 @layer components{
     header{
-        background:linear-gradient(rgba(13, 12, 12, 0.5), rgba(13, 12, 12, 0.5)),url("/public/images/header.jpg");
+        background:linear-gradient(rgba(13, 12, 12, 0.5), rgba(13, 12, 12, 0.5)),url("/public/images/header-min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
