@@ -2,6 +2,7 @@ const openBtn = document.querySelector("#open-btn");
 const cancelBtn = document.querySelector("#cancel-btn");
 const mobileMenu = document.querySelector("#mobile-menu");
 
+// open and close mobile menu
 openBtn.addEventListener("click",() => {
      mobileMenu.classList.add("right-0");
      mobileMenu.classList.remove("right-[-20rem]");
@@ -11,7 +12,6 @@ cancelBtn.addEventListener("click",() => {
     mobileMenu.classList.remove("right-0");
     mobileMenu.classList.add("right-[-20rem]");
 });
-
 
 // Typewriter
 const titleELem = document.querySelector("#title");
