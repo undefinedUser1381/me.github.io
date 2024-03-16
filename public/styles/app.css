@@ -699,6 +699,10 @@ header{
   margin-bottom: 0.75rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -747,8 +751,16 @@ header{
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-\[0\.3px\] {
   height: 0.3px;
+}
+
+.h-\[12\.5rem\] {
+  height: 12.5rem;
 }
 
 .h-\[17rem\] {
@@ -777,6 +789,10 @@ header{
 
 .min-h-\[35rem\] {
   min-height: 35rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-24 {
@@ -815,6 +831,10 @@ header{
   width: 30%;
 }
 
+.w-\[32\%\] {
+  width: 32%;
+}
+
 .w-\[40\%\] {
   width: 40%;
 }
@@ -841,6 +861,10 @@ header{
 
 .w-\[85\%\] {
   width: 85%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-full {
@@ -907,6 +931,10 @@ header{
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -929,6 +957,10 @@ header{
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -967,6 +999,11 @@ header{
 
 .bg-\[\#13131399\] {
   background-color: #13131399;
+}
+
+.bg-\[\#F4F5F8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 245 248 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f4f5f8\] {
@@ -1197,7 +1234,12 @@ header{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+
 @media (max-width: 1200px) {
+  .xl\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .xl\:w-\[45\%\] {
     width: 45%;
   }
@@ -1205,7 +1247,16 @@ header{
   .xl\:w-\[85\%\] {
     width: 85%;
   }
+
+  .xl\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .xl\:gap-14 {
+    gap: 3.5rem;
+  }
 }
+
 
 @media (max-width: 992px) {
   .lg\:mx-auto {
@@ -1254,7 +1305,6 @@ header{
   }
 }
 
-
 @media (max-width: 768px) {
   .md\:mx-auto {
     margin-left: auto;
@@ -1271,6 +1321,10 @@ header{
 
   .md\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .md\:w-\[90\%\] {
+    width: 90%;
   }
 
   .md\:w-full {
@@ -1299,6 +1353,10 @@ header{
     min-height: 35rem;
   }
 
+  .sm\:w-\[100\%\] {
+    width: 100%;
+  }
+
   .sm\:w-full {
     width: 100%;
   }
@@ -1311,7 +1369,6 @@ header{
     gap: 0.75rem;
   }
 }
-
 
 .\[\&\>li\>a\]\:text-white>li>a {
   --tw-text-opacity: 1;
