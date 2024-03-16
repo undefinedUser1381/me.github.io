@@ -1234,29 +1234,70 @@ header{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-
-@media (max-width: 1200px) {
-  .xl\:w-\[40\%\] {
-    width: 40%;
+@media (max-width: 576px) {
+  .sm\:left-0 {
+    left: 0px;
   }
 
-  .xl\:w-\[45\%\] {
-    width: 45%;
+  .sm\:min-h-\[35rem\] {
+    min-height: 35rem;
   }
 
-  .xl\:w-\[85\%\] {
-    width: 85%;
+  .sm\:w-\[100\%\] {
+    width: 100%;
   }
 
-  .xl\:flex-wrap {
-    flex-wrap: wrap;
+  .sm\:w-full {
+    width: 100%;
   }
 
-  .xl\:gap-14 {
-    gap: 3.5rem;
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 }
 
+@media (max-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+}
 
 @media (max-width: 992px) {
   .lg\:mx-auto {
@@ -1305,68 +1346,25 @@ header{
   }
 }
 
-@media (max-width: 768px) {
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 1200px) {
+  .xl\:w-\[40\%\] {
+    width: 40%;
   }
 
-  .md\:hidden {
-    display: none;
+  .xl\:w-\[45\%\] {
+    width: 45%;
   }
 
-  .md\:h-auto {
-    height: auto;
+  .xl\:w-\[85\%\] {
+    width: 85%;
   }
 
-  .md\:w-\[50\%\] {
-    width: 50%;
+  .xl\:flex-wrap {
+    flex-wrap: wrap;
   }
 
-  .md\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-
-  .md\:gap-16 {
-    gap: 4rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .sm\:left-0 {
-    left: 0px;
-  }
-
-  .sm\:min-h-\[35rem\] {
-    min-height: 35rem;
-  }
-
-  .sm\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .sm\:w-full {
-    width: 100%;
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
-  .sm\:gap-3 {
-    gap: 0.75rem;
+  .xl\:gap-14 {
+    gap: 3.5rem;
   }
 }
 
