@@ -20,6 +20,19 @@ let h5ElemTypeWritter = new Typewriter(titleELem,{
     loop : true
 });
 
+
+// Swiper
+const swiper = new Swiper(".swiper",{
+    direction : "horizontal",
+    loop : true,
+    centeredSlides:true,
+    slidesPerView : 1,
+    spaceBetween:100,
+    autoplay: {
+        delay: 5000,
+      },
+});
+
 h5ElemTypeWritter.typeString('سلام من عرفان قزی هستم')
     .pauseFor(2500)
     .deleteAll()
