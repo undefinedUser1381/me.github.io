@@ -38,6 +38,12 @@
         height: auto;
     }
     .swiper{
-        @apply w-[85%];
+        @apply w-[85%] mt-[2rem] mb-[2rem];
+    }
+    .swiper-pagination-bullet{
+        @apply w-3 h-[3px] rounded-sm bg-white;
+    }
+    .swiper-pagination-bullet-active{
+        @apply bg-pink w-5
     }
 }
