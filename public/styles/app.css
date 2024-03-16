@@ -563,7 +563,7 @@ header{
   background-position: center;
 }
 
-.details{
+.details,.comments{
   background:linear-gradient(rgba(13, 12, 12, 0.5), rgba(13, 12, 12, 0.5)),url("/public/images/cropped-client-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -572,6 +572,14 @@ header{
   background-attachment: fixed;
   position: relative;
   background-position: center;
+}
+
+.comments{
+  height: auto;
+}
+
+.swiper {
+  width: 85%;
 }
 
 .fixed {
@@ -671,6 +679,14 @@ header{
   margin-bottom: 4rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -693,6 +709,10 @@ header{
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .block {
@@ -723,6 +743,10 @@ header{
   height: 20rem;
 }
 
+.h-\[3px\] {
+  height: 3px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -745,6 +769,10 @@ header{
 
 .w-32 {
   width: 8rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-8 {
@@ -787,6 +815,10 @@ header{
   width: 70%;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -797,6 +829,10 @@ header{
 
 .w-full {
   width: 100%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -835,6 +871,10 @@ header{
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -845,6 +885,10 @@ header{
 
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -859,6 +903,10 @@ header{
   gap: 1.5rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -869,6 +917,10 @@ header{
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .rounded-xl {
@@ -931,6 +983,10 @@ header{
   padding: 0.25rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -955,8 +1011,16 @@ header{
   padding-left: 3rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .pr-12 {
   padding-right: 3rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .text-center {
@@ -1003,6 +1067,10 @@ header{
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-semibold {
@@ -1109,16 +1177,62 @@ header{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (max-width: 1200px) {
-  .xl\:w-\[45\%\] {
-    width: 45%;
+@media (max-width: 576px) {
+  .sm\:left-0 {
+    left: 0px;
   }
 
-  .xl\:w-\[85\%\] {
-    width: 85%;
+  .sm\:min-h-\[35rem\] {
+    min-height: 35rem;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 }
 
+@media (max-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+}
 
 @media (max-width: 992px) {
   .lg\:mx-auto {
@@ -1167,66 +1281,15 @@ header{
   }
 }
 
-@media (max-width: 768px) {
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 1200px) {
+  .xl\:w-\[45\%\] {
+    width: 45%;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:h-auto {
-    height: auto;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-
-  .md\:gap-16 {
-    gap: 4rem;
+  .xl\:w-\[85\%\] {
+    width: 85%;
   }
 }
-
-
-@media (max-width: 576px) {
-  .sm\:left-0 {
-    left: 0px;
-  }
-
-  .sm\:min-h-\[35rem\] {
-    min-height: 35rem;
-  }
-
-  .sm\:w-full {
-    width: 100%;
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
-  .sm\:gap-3 {
-    gap: 0.75rem;
-  }
-}
-
-
-
 
 .\[\&\>li\>a\]\:text-white>li>a {
   --tw-text-opacity: 1;
