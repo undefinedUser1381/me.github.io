@@ -28,8 +28,10 @@ const swiper = new Swiper(".swiper",{
     centeredSlides:true,
     slidesPerView : 1,
     spaceBetween:100,
-    autoplay: {
-        delay: 5000,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable:true,
+        bulletClass : "swiper-pagination-bullet swiper-pagination-bullet-active"
       },
 });
 
