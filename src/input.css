@@ -46,4 +46,13 @@
     .swiper-pagination-bullet-active{
         @apply bg-pink w-5
     }
+    textarea{
+        resize: none;
+    }
+    .contact{
+        /* background: orange; */
+        /* background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; */
+    }
 }
