@@ -603,10 +603,24 @@ textarea{
 }
 
 .contact{
-  background: url("../public/images/contact.jpg");
+  background: url("/public/images/contact.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.contact::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #9C27B0;
+  opacity: 0.9;
+  z-index: -1;
 }
 
 .fixed {
@@ -798,8 +812,8 @@ textarea{
   height: 20rem;
 }
 
-.h-\[30rem\] {
-  height: 30rem;
+.h-\[34rem\] {
+  height: 34rem;
 }
 
 .h-\[3px\] {
@@ -874,10 +888,6 @@ textarea{
   width: 32%;
 }
 
-.w-\[35\%\] {
-  width: 35%;
-}
-
 .w-\[40\%\] {
   width: 40%;
 }
@@ -886,8 +896,8 @@ textarea{
   width: 50%;
 }
 
-.w-\[65\%\] {
-  width: 65%;
+.w-\[55\%\] {
+  width: 55%;
 }
 
 .w-\[6rem\] {
@@ -1004,6 +1014,10 @@ textarea{
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .overflow-hidden {
@@ -1178,6 +1192,14 @@ textarea{
   line-height: 1.75rem;
 }
 
+.text-\[2\.4rem\] {
+  font-size: 2.4rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .font-\[1\.3rem\] {
   font-weight: 1.3rem;
 }
@@ -1200,6 +1222,10 @@ textarea{
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
 }
 
 .text-\[\#777777\] {
@@ -1348,6 +1374,10 @@ textarea{
     margin-right: auto;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1368,6 +1398,14 @@ textarea{
     width: 85%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
   .lg\:flex-wrap {
     flex-wrap: wrap;
   }
@@ -1386,6 +1424,10 @@ textarea{
 
   .lg\:text-\[25px\] {
     font-size: 25px;
+  }
+
+  .lg\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
   }
 }
 
@@ -1455,6 +1497,14 @@ textarea{
 
   .sm\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .sm\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
   }
 }
 
