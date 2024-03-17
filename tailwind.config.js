@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily : {
-        "Vazir": "Vazir"
+        "Vazir": "Vazir",
+        "Pattaya-Regular" : "Pattaya-Regular"
       },
       colors:{
         "pink" : "#9C27B0",
