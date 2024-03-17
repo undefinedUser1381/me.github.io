@@ -1340,20 +1340,16 @@ header{
     width: 50%;
   }
 
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .md\:w-\[90\%\] {
     width: 90%;
   }
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .md\:w-\[80\%\] {
-    width: 80%;
   }
 
   .md\:flex-col {
