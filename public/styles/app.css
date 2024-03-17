@@ -452,6 +452,14 @@ video {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Pattaya-Regular";
+
+  src:local("Pattaya-Regular"), url("../fonts/pattaya/Pattaya-Regular.ttf") format("truetype");
+
+  font-display: swap;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -740,6 +748,10 @@ textarea{
   margin-bottom: 2rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -858,6 +870,10 @@ textarea{
 
 .w-8 {
   width: 2rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-\[100\%\] {
@@ -1016,10 +1032,6 @@ textarea{
   gap: 2.25rem;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1060,6 +1072,11 @@ textarea{
 
 .bg-\[\#13131399\] {
   background-color: #13131399;
+}
+
+.bg-\[\#282830\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 48 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#E9ECEF\] {
@@ -1158,12 +1175,20 @@ textarea{
   text-align: center;
 }
 
+.font-Pattaya-Regular {
+  font-family: Pattaya-Regular;
+}
+
 .font-Vazir {
   font-family: Vazir;
 }
 
 .text-\[1\.3rem\] {
   font-size: 1.3rem;
+}
+
+.text-\[1\.9rem\] {
+  font-size: 1.9rem;
 }
 
 .text-\[12px\] {
@@ -1176,6 +1201,10 @@ textarea{
 
 .text-\[2\.5rem\] {
   font-size: 2.5rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 
 .text-\[55px\] {
@@ -1192,12 +1221,8 @@ textarea{
   line-height: 1.75rem;
 }
 
-.text-\[2\.4rem\] {
-  font-size: 2.4rem;
-}
-
-.text-\[2rem\] {
-  font-size: 2rem;
+.text-\[2\.2rem\] {
+  font-size: 2.2rem;
 }
 
 .font-\[1\.3rem\] {
@@ -1222,10 +1247,6 @@ textarea{
 
 .leading-8 {
   line-height: 2rem;
-}
-
-.leading-9 {
-  line-height: 2.25rem;
 }
 
 .text-\[\#777777\] {
@@ -1424,10 +1445,6 @@ textarea{
 
   .lg\:text-\[25px\] {
     font-size: 25px;
-  }
-
-  .lg\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
   }
 }
 
