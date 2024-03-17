@@ -50,9 +50,22 @@
         resize: none;
     }
     .contact{
-        /* background: orange; */
-        /* background-size: cover;
+        background: url("/public/images/contact.jpg");   
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center; */
+        background-position: center;
+        position: relative;
+        z-index: 1;
+    }
+    .contact::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #9C27B0;
+        opacity: 0.9;
+        z-index: -1;
     }
 }
