@@ -8,6 +8,11 @@
         src:local("Vazir"), url("../fonts/vazir/Vazir.ttf") format("truetype");
         font-display: swap;
     }
+    @font-face {
+        font-family: "Pattaya-Regular";
+        src:local("Pattaya-Regular"), url("../fonts/pattaya/Pattaya-Regular.ttf") format("truetype");
+        font-display: swap;
+    }
 }
 
 @layer components{
