@@ -1084,6 +1084,10 @@ header{
   padding: 2.5rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
