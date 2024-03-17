@@ -735,6 +735,10 @@ header{
   margin-top: 9rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -785,6 +789,14 @@ header{
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[50rem\] {
+  height: 50rem;
+}
+
+.h-\[100\%\] {
+  height: 100%;
 }
 
 .min-h-\[35rem\] {
@@ -873,6 +885,10 @@ header{
 
 .w-full {
   width: 100%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .transform {
@@ -1064,6 +1080,10 @@ header{
   padding: 2rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1082,6 +1102,10 @@ header{
 
 .pr-5 {
   padding-right: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-center {
@@ -1136,6 +1160,10 @@ header{
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-\[2\.5rem\] {
+  font-weight: 2.5rem;
 }
 
 .leading-7 {
